@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+        <title>BootUp '17</title>
+        <meta name="description" content="Temporary landing page for Bootup '17 Symposium">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sachin Nitish">
+
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+        <!-- Standard iPad Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+        <!-- Standard iPhone Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="css/style-1.css" />
+
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.js"></script>
+	</head>
+	
+	<body id="dotty-variant">
+
+		<canvas id="dotty"></canvas>
+
+		<div class="loading-part animated-quick">
+
+			<div class="loader-part opacity-0 animated-quick">
+
+				<div class="loader-circle"></div>
+				<div class="loader-text"><font color="#ff4d94">Booting</font></div>
+
+			</div>
+
+		</div>
+
+		<button class="open-menu-mobile">
+			<i class="icon ion-navicon-round opening-menu"></i>
+			<i class="icon ion-close-round closing-menu display-none"></i>
+		</button>
+
+		<div id="navigation" class="mobile-nav animated-middle">
+
+			<ul class="main-navigation">
+
+				<li>
+					<a class="nav-link-close">
+						<i class="icon ion-ios-home-outline"></i>
+						Home
+					</a>
+				</li>
+
+			</ul> <!-- CLOSE Main nav -->
+
+			<ul class="bottom-nav">
+
+				<!--<li class="twitter-color">
+					<a href="#" title="">
+						<i class="icon ion-social-twitter-outline"></i>
+						Twitter
+					</a>
+				</li>-->
+
+				<li class="facebook-color">
+					<a href="https://www.facebook.com/letsbootup/" title="">
+						<i class="icon ion-social-facebook-outline"></i>
+						Facebook
+					</a>
+				</li> 
+			</ul> <!-- CLOSE .bottom-nav -->
+
+		</div> <!-- CLOSE #navigation -->
+
+		<section id="home-part" class="scale-max">
+
+			<div class="overlay"></div>
+
+			<div class="item-title text-center animated-quick">
+
+				<!-- Your logo -->
+				<img src="img/logo.png" alt="" class="brand-logo"/>
+				
+				<h2 class="cd-headline letters rotate-2">
+					
+
+					<div class="cd-words-wrapper">
+
+						<b class="is-visible"><font color="#ff4d94">A&nbsp;TECHNICAL&nbsp;SYMPOSIUM</font></b> <!-- use the code &nbsp; to add a space between 2 words -->
+						<b><font color="#ff4d94">LIKE&nbsp;NEVER&nbsp;BEFORE!</font></b>
+						<b><font color="#ff4d94">WE&nbsp;ARE&nbsp;COMING&nbsp;SOON!</font></b>
+
+					</div>
+
+				</h1>
+
+				<a class="btn open-newsletter btn-color">Notify Me</a>
+
+				<!-- <a class="btn open-content btn-light about-content">More info</a> -->
+				
+			</div> <!-- CLOSE item-title -->
+
+		</section> <!-- CLOSE #home-part -->
+
+		</section> <!-- CLOSE #content-part -->
+
+		<section id="newsletter-part" class="opacity-0 newsletter-touch">
+
+			<div class="item-title text-center animated-quick">
+				
+				<h1 class="newsletter-title">Subscribe!</h1>
+
+				<p>Send us a mail to receive all updates and information</p>
+
+				<!-- OPEN - Newsletter part -->
+				<div id="subscribe">
+
+	                <!-- OPEN - Newsletter form -->
+	                <form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
+
+	                		<div class="row">
+
+	                            <!-- Full name -->
+	                            <div class="col-xs-12 col-sm-6 col-lg-6">
+	                                <div class="form-group">
+	                                    <input type="text" id="name" class="form form-control" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" name="name" data-name="Name" required>
+	                                </div>
+	                            </div>
+
+	                            <!-- E-mail -->
+	                            <div class="col-xs-12 col-sm-6 col-lg-6">
+	                                <div class="form-group">
+	                                    <input type="email" id="email" class="form form-control" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" name="email-address" data-name="Email Address" required>
+	                                </div>
+	                            </div>
+
+	                            <!-- Subject -->
+	                            <div class="col-xs-12 col-sm-12 col-lg-12">
+	                                <div class="form-group">
+	                                    <input type="text" id="subject" class="form form-control" placeholder="Write the subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write the subject'" name="subject" data-name="Subject">
+	                                </div>
+	                            </div>
+
+	                            <!-- Message -->
+	                            <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+	                                <div class="form-group">
+	                                    <textarea id="text-area" class="form textarea form-control" placeholder="Write a short message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write a short message'" name="message" data-name="Text Area" required></textarea>
+	                                </div>
+	                            </div>
+
+	                        </div>
+
+	                    	<!-- Button submit -->
+	                    	<button type="submit" id="valid-form" class="btn btn-color">Send My Message</button>
+	        
+	                    </form> <!-- CLOSE - Newsletter form -->
+
+					<!-- OPEN - Newsletter message -->
+					<div class="block-message">
+
+						<div class="message">
+
+							<p class="notify-valid"></p>
+
+						</div>
+
+					</div> <!-- CLOSE - Newsletter message -->
+
+        		</div> <!-- CLOSE - Newsletter part -->
+
+			</div>
+
+		</section> <!-- CLOSE #newsletter-part -->
+
+		<!-- Language selection 
+		<p class="lang">
+			<a href="" class="active">EN</a><span> | </span>
+			<a href="">DE</a>
+		</p>-->
+
+		<!-- Copyright -->
+		<p class="copyright">© BootUp 2017</p>
+
+
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** Resources jQuery ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+	
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Google Maps API -->
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+	<!-- Countdown plugin -->
+	<script src="js/countdown.js"></script>
+
+	<!-- Newsletter plugin -->
+	<script src="js/notifyMe.js"></script>
+
+	<!-- Contact form plugin -->
+	<script src="js/contact-me.js"></script>
+
+	<!-- Swipebox plugin -->
+	<script src="js/jquery.swipebox.js"></script>
+
+	<!-- Text rotator plugin -->
+	<script src="js/animated-headlines.js"></script>
+
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
+
+	<!-- Mozaic plugin -->
+	<script src="js/dotty.js"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+	
+    <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+	</body>
+
+</html>
